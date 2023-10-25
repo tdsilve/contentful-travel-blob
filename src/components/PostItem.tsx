@@ -5,7 +5,7 @@ import { formatImageSrc } from "../utils/formatString";
 import { format } from "date-fns";
 export const PostItem = ({ post }: { post: PostType }) => {
   return (
-    <div className="flex flex-col gap-y-4">
+    <div className="flex flex-col gap-y-4 mx-auto w-[80%]">
       <PostItemTitle title={post.title} />
       <PostItemCover src={post.cover.url} />
       <AuthorAndPublishDate post={post} />
@@ -16,7 +16,7 @@ export const PostItem = ({ post }: { post: PostType }) => {
 
 const AuthorAndPublishDate = ({ post }: { post: PostType }) => {
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex items-center gap-3 mx-auto">
       <Avatar pictureSrc={post.author.picture} />
       <div>
         <p>{post.author.name}</p>
