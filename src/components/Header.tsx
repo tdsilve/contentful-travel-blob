@@ -5,8 +5,8 @@ export const Header = () => {
       <Title />
       <p className="text-gray-400 max-w-lg">
         Welcome to our travel blog, a passport to adventures and discoveries.
-        Join us as we explore the world's most breathtaking destinations, share
-        insider tips, and inspire your wanderlust.
+        Join us as we explore the world &apos;s most breathtaking destinations,
+        share insider tips, and inspire your wanderlust.
       </p>
     </div>
   );
