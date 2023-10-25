@@ -1,5 +1,7 @@
 # Travel Blog with Contentful
 
+The main goal of this project is to learn how to use Contentful
+
 ### Technologies
 
 This travel blog was created using Next.js 13, TypeScript, and Tailwind CSS.
