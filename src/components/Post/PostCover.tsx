@@ -14,7 +14,6 @@ export const PostCover = ({
       width={400}
       height={400}
       className="aspect-video"
-      unoptimized
     />
   );
 };
