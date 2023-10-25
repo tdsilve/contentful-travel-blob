@@ -30,7 +30,12 @@ const AuthorAndPublishDate = ({ post }: { post: PostType }) => {
 const Avatar = ({ pictureSrc }: { pictureSrc: string }) => {
   return (
     <div className="w-[70px] h-[70px] relative rounded-full overflow-hidden">
-      <Image src={formatImageSrc(pictureSrc)} fill alt="Author picture" />
+      <Image
+        src={formatImageSrc(pictureSrc)}
+        fill
+        alt="Author picture"
+        unoptimized
+      />
     </div>
   );
 };
@@ -52,7 +57,7 @@ const PostItemCover = ({
       alt={alt}
       width={1000}
       height={1000}
-      priority
+      unoptimized
     />
   );
 };
