@@ -11,9 +11,9 @@ The main goal of this project is to build a Travel Blog using Contentful as the 
 This travel blog was created using Next.js 13, TypeScript, and Tailwind CSS.
 The content for this blog is managed through [Contentful.](https://www.contentful.com/)
 
-## Project Improvements
+## Project Details
 
-1.
+1. I created a webhook between Vercel and Contentful. So every time the content changes, a new build is triggered.
 
 ### TODO
 
