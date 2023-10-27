@@ -1,4 +1,4 @@
-import { PostType } from "~/types/types";
+import { PostType } from "~/lib/types";
 import { RichText } from "./RichText";
 import Image from "next/image";
 import { formatImageSrc } from "../utils/formatString";
@@ -20,9 +20,9 @@ const AuthorAndPublishDate = ({ post }: { post: PostType }) => {
       <Avatar pictureSrc={post.author.picture} />
       <div>
         <p>{post.author.name}</p>
-        <p className="text-gray-500">
+        <time className="text-gray-500">
           {format(new Date(post.publishDate), "MMM dd")}
-        </p>
+        </time>
       </div>
     </div>
   );

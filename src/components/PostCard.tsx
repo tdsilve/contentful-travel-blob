@@ -2,7 +2,7 @@ import Link from "next/link";
 import { PostTitle } from "./Post/PostTitle";
 import { PostCover } from "./Post/PostCover";
 import { PostTags } from "./Post/PostTags";
-import { PostType } from "~/types/types";
+import { PostType } from "~/lib/types";
 
 type PostCardProps = Pick<PostType, "title" | "cover" | "tags" | "slug">;
 

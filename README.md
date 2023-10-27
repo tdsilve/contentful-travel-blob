@@ -1,6 +1,10 @@
 # Travel Blog with Contentful
 
-The main goal of this project is to learn how to use Contentful.
+The main goal of this project is to build a Travel Blog using Contentful as the data source.
+
+## Check the result:
+
+https://contentful-travel-blob.vercel.app/
 
 ### Technologies
 
@@ -9,11 +13,11 @@ The content for this blog is managed through [Contentful.](https://www.contentfu
 
 ## Project Improvements
 
-1. The data is revalidated on-demand. This allows me to create or update content on my site without redeploying it.
-   The main benefits are: better performance, reduced backend load and faster builds
+1.
 
 ### TODO
 
 [] Create a preview.
 [] Create a draft mode.
-
+[] Implement revalidated data on-demand. This will allow me to create or update content on my site without redeploying it.
+The main benefits are: better performance, reduced backend load and faster builds
