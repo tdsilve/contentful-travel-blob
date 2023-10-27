@@ -1,5 +1,5 @@
 import { clsx } from "clsx";
-
+import Link from "next/link";
 export const Title = ({ small = false }: { small?: boolean }) => {
   return (
     <div
@@ -10,5 +10,13 @@ export const Title = ({ small = false }: { small?: boolean }) => {
     >
       Travel Blog
     </div>
+  );
+};
+
+export const TitleLinkToHome = ({ small = false }: { small?: boolean }) => {
+  return (
+    <Link href={"/"} className="underline">
+      <Title small />
+    </Link>
   );
 };
