@@ -4,7 +4,7 @@ The main goal of this project is to build a Travel Blog using Contentful as the 
 
 ## Check the result:
 
-https://contentful-travel-blob.vercel.app/
+[https://contentful-travel-blob.vercel.app/](https://contentful-travel-blog.vercel.app/)
 
 ### Technologies
 
@@ -21,3 +21,4 @@ The content for this blog is managed through [Contentful.](https://www.contentfu
 [] Create a draft mode.
 [] Implement revalidated data on-demand. This will allow me to create or update content on my site without redeploying it.
 The main benefits are: better performance, reduced backend load and faster builds
+[] Improve images loading
