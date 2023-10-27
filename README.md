@@ -18,7 +18,10 @@ The content for this blog is managed through [Contentful.](https://www.contentfu
 ### TODO
 
 [] Create a preview.
+
 [] Create a draft mode.
+
 [] Implement revalidated data on-demand. This will allow me to create or update content on my site without redeploying it.
 The main benefits are: better performance, reduced backend load and faster builds
+
 [] Improve images loading
