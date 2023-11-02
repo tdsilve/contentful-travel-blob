@@ -1,3 +1,3 @@
 export const formatImageSrc = (src: string) => {
-  return "https://" + src;
+  return "https:" + src;
 };

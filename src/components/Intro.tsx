@@ -37,6 +37,7 @@ const ImageSlider = ({ posts }: IntroProps) => {
 };
 
 const ImageSliderItem = ({ post }: { post: PostType }) => {
+  console.log(formatImageSrc(post.cover.url));
   return (
     <Link href={`/post/${post.slug}`}>
       <div className="relative [@media(hover:hover)]:grayscale transition-all hover:grayscale-0 mx-auto w-[500px] h-[300px]">
