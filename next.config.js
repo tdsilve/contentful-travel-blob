@@ -5,10 +5,9 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "images.ctfassets.net",
+        hostname: "**.images.ctfassets.net",
       },
     ],
-    // unoptimized: true, //Without this configuration, contentful's images do not load in production
   },
 };
 
