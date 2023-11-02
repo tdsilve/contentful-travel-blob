@@ -1,4 +1,4 @@
-import { TitleLinkToHome } from "~/components/Title";
+import { TitleLinkToHome } from "~/components/BlogTitle";
 import notFoundImage from "../assets/not-found.jpeg";
 import Image from "next/image";
 

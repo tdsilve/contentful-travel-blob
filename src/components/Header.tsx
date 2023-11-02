@@ -1,4 +1,4 @@
-import { Title } from "./Title";
+import { Title } from "./BlogTitle";
 export const Header = () => {
   return (
     <div className="flex flex-col gap-4 md:flex-row items-center text-center justify-center">

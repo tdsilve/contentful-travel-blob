@@ -1,7 +1,7 @@
 import { PostType } from "~/lib/types";
 import { RichText } from "./RichText";
 import Image from "next/image";
-import { formatImageSrc } from "../utils/formatString";
+import { formatImageSrc } from "../utils/formatImageSrc";
 import { format } from "date-fns";
 export const PostItem = ({ post }: { post: PostType }) => {
   return (

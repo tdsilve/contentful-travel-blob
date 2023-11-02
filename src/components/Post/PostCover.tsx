@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { formatImageSrc } from "../../utils/formatString";
+import { formatImageSrc } from "../../utils/formatImageSrc";
 export const PostCover = ({
   src,
   alt = "post cover image",
