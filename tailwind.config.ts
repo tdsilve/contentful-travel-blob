@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+import plugin from "tailwindcss/plugin";
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,8 +13,24 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      textShadow: {
+        sm: "0 0 2px black",
+        md: "0 0 4px black",
+      },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "text-shadow": (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme("textShadow") },
+      );
+    }),
+  ],
 };
 export default config;

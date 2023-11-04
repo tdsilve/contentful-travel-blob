@@ -1,5 +1,5 @@
 import { contentfulClient } from "./contentfulClient";
-
+import { OrderFilterPaths, EntrySys } from "contentful";
 const CONTENT_TYPE = "travelBlog";
 
 const parsedPosts = (posts) => {
@@ -39,4 +39,14 @@ export async function getPostBySlug(slug: string, preview = false) {
   });
   const post = parsedPosts(items)[0];
   return post;
+}
+
+export async function getSortedPostsByPublishDate(preview = false) {
+  const contentful = contentfulClient(preview);
+  const { items } = await contentful.getEntries({
+    content_type: CONTENT_TYPE,
+    order: ["sys.createdAt"] as OrderFilterPaths<EntrySys, "sys">[],
+    limit: 5,
+  });
+  return parsedPosts(items);
 }

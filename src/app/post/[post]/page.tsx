@@ -1,5 +1,5 @@
 import { getPostBySlug } from "~/lib/api/posts";
-import { PostItem } from "~/components/PostItem";
+import { PostItem } from "~/components/Post/PostItem";
 export async function generateMetadata() {
   return {
     title: "Travel Post",

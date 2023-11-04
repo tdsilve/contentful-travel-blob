@@ -20,7 +20,7 @@ export default function RootLayout({
         className={`${inter.className} p-10`}
         style={{ backgroundColor: "#F8F8F8" }}
       >
-        <div className="bg-white p-4 rounded-2xl shadow-xl">{children}</div>
+        <div className="bg-white rounded-2xl shadow-xl py-6">{children}</div>
       </body>
     </html>
   );

@@ -1,13 +1,11 @@
-import { PostCard } from "./PostCard";
-import { PostType } from "~/lib/types";
+import { getPosts } from "~/lib/api/posts";
+import { PostCard } from "./index";
 
-export const Posts = async ({
-  posts,
-  className,
-}: {
-  posts: PostType[];
-  className?: string;
-}) => {
+export const Posts = async ({ className }: { className?: string }) => {
+  const posts = await getPosts();
+  if (posts) {
+    throw new Error("no posts");
+  }
   return (
     <div className={`flex flex-wrap gap-8 justify-center mx-auto ${className}`}>
       {posts.map((post) => {

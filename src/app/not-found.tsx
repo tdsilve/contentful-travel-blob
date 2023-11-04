@@ -1,4 +1,4 @@
-import { TitleLinkToHome } from "~/components/BlogTitle";
+import { BlogTitleLinkToHome } from "~/components/index";
 import notFoundImage from "../assets/not-found.jpeg";
 import Image from "next/image";
 
@@ -13,7 +13,7 @@ export default function NotFound() {
       />
       <p>Could not find requested resource</p>
       <div>
-        Please click here to view all posts <TitleLinkToHome />
+        Please click here to view all posts <BlogTitleLinkToHome />
       </div>
     </div>
   );

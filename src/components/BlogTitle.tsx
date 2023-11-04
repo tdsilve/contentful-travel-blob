@@ -1,11 +1,11 @@
 import { clsx } from "clsx";
 import Link from "next/link";
-export const Title = ({ small = false }: { small?: boolean }) => {
+export const BlogTitle = ({ small = false }: { small?: boolean }) => {
   return (
     <h1
       className={clsx(
-        "tracking-tighter font-bold",
-        small ? "text-3xl" : "text-6xl",
+        "tracking-tighter font-semibold",
+        small ? "text-2xl" : "text-6xl",
       )}
     >
       Travel Blog
@@ -13,10 +13,10 @@ export const Title = ({ small = false }: { small?: boolean }) => {
   );
 };
 
-export const TitleLinkToHome = ({ small = false }: { small?: boolean }) => {
+export const BlogTitleLinkToHome = ({ small = false }: { small?: boolean }) => {
   return (
     <Link href={"/"} className="underline">
-      <Title small={small} />
+      <BlogTitle small={small} />
     </Link>
   );
 };

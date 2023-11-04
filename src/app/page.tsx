@@ -1,11 +1,37 @@
-import { getPosts } from "~/lib/api/posts";
-import { BlogMainContent } from "~/components/BlogMainContent";
 import React from "react";
-export default async function Home() {
-  const posts = await getPosts();
+import {
+  Header,
+  PostCarroussel,
+  SectionTitle,
+  Posts,
+} from "~/components/index";
+import { getSortedPostsByPublishDate } from "~/lib/api/posts";
+export default function Home() {
   return (
     <main className="space-y-8">
-      <BlogMainContent posts={posts} />
+      <Header />
+      <SectionCarroussel />
+      <SectionMorePosts />
     </main>
   );
 }
+
+const SectionCarroussel = async () => {
+  const posts = await getSortedPostsByPublishDate();
+
+  return (
+    <>
+      <SectionTitle title="Spots for true adventures" />
+      <PostCarroussel posts={posts} />
+    </>
+  );
+};
+
+const SectionMorePosts = () => {
+  return (
+    <>
+      <SectionTitle title="More Posts" />
+      <Posts />
+    </>
+  );
+};
