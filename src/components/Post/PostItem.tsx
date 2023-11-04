@@ -47,6 +47,12 @@ const PostItemCover = ({
   alt?: string;
 }) => {
   return (
-    <Image src={formatImageSrc(src)} alt={alt} width={1000} height={1000} />
+    <Image
+      src={formatImageSrc(src)}
+      alt={alt}
+      width={1000}
+      height={1000}
+      className="mx-auto"
+    />
   );
 };
