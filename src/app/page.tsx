@@ -18,7 +18,7 @@ export default function Home() {
 
 const SectionCarroussel = async () => {
   const posts = await getSortedPostsByPublishDate();
-
+  if (!posts) throw new Error("No sorted posts");
   return (
     <>
       <SectionTitle title="Spots for true adventures" />

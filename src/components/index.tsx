@@ -1,7 +1,5 @@
 export * from "./BlogTitle";
 export * from "./Header";
-export * from "./Post/PostCard";
-export * from "./Post/PostItem";
 export * from "./Posts";
 export * from "./PostsTrending";
 export * from "./RichText";

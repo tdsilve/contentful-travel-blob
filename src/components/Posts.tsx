@@ -3,9 +3,8 @@ import { PostCard } from "./index";
 
 export const Posts = async ({ className }: { className?: string }) => {
   const posts = await getPosts();
-  if (!posts) {
-    throw new Error("No posts");
-  }
+  if (!posts) throw new Error("No posts!");
+
   return (
     <div className={`flex flex-wrap gap-8 justify-center mx-auto ${className}`}>
       {posts.map((post) => {

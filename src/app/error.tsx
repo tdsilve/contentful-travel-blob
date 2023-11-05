@@ -14,9 +14,10 @@ export default function Error({
   }, [error]);
 
   return (
-    <div>
+    <div className="text-center space-y-4">
       <h2>Something went wrong!</h2>
       <button
+        className="bg-blue-700 p-2 text-white rounded-md hover:opacity-90 transition"
         onClick={
           // Attempt to recover by trying to re-render the segment
           () => reset()
