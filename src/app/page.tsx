@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Header,
   PostCarroussel,
@@ -6,10 +7,13 @@ import {
   Posts,
 } from "~/components/index";
 import { getSortedPostsByPublishDate } from "~/lib/api/posts";
+import { FadeUp } from "~/components/Animations/FadeUp";
 export default function Home() {
   return (
     <main className="space-y-8">
-      <Header />
+      <FadeUp>
+        <Header />
+      </FadeUp>
       <SectionCarroussel />
       <SectionMorePosts />
     </main>
@@ -22,7 +26,9 @@ const SectionCarroussel = async () => {
   return (
     <>
       <SectionTitle title="Spots for true adventures" />
-      <PostCarroussel posts={posts} />
+      <FadeUp>
+        <PostCarroussel posts={posts} />
+      </FadeUp>
     </>
   );
 };
@@ -31,7 +37,9 @@ const SectionMorePosts = () => {
   return (
     <>
       <SectionTitle title="More Posts" />
-      <Posts />
+      <FadeUp>
+        <Posts />
+      </FadeUp>
     </>
   );
 };

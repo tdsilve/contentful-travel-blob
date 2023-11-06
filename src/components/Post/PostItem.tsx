@@ -3,9 +3,11 @@ import { RichText } from "../index";
 import Image from "next/image";
 import { formatImageSrc } from "../../utils/formatImageSrc";
 import { format } from "date-fns";
+import { ScrollBar } from "../Animations/ScrollBar";
 export const PostItem = ({ post }: { post: PostType }) => {
   return (
-    <div className="flex flex-col gap-y-4 mx-auto w-[80%]">
+    <div className="flex flex-col gap-y-4 mx-auto w-[80%] relative">
+      <ScrollBar />
       <PostItemTitle title={post.title} />
       <PostItemCover src={post.cover.url} />
       <AuthorAndPublishDate post={post} />

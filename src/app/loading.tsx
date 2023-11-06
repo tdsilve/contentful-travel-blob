@@ -9,6 +9,7 @@ export default function Loading() {
         }}
         transition={{
           repeat: Infinity,
+          ease: "linear",
           duration: 0.5,
         }}
         style={{
