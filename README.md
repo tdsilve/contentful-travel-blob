@@ -14,3 +14,9 @@ The content for this blog is managed through [Contentful.](https://www.contentfu
 ## Project Details
 
 1. I created a webhook between Vercel and Contentful. So every time the content changes, a new build is triggered.
+
+### Improvements
+
+1. GraphQL
+2. Preview
+3. Draft
